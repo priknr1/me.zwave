@@ -1,0 +1,20 @@
+{
+  "name": "me.zwave",
+  "version": "0.0.15",
+  "description": "This app adds support for Z-Wave.Me devices to Homey",
+  "main": "app.js",
+  "dependencies": {
+    "homey-zwavedriver": "git+https://github.com/athombv/node-homey-zwavedriver.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/IcarusProject/me.zwave.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/IcarusProject/me.zwave#readme"
+}
