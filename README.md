@@ -1,43 +1,33 @@
 ﻿# Z-Wave.Me
 
 This app adds support for Z-Wave.Me devices to Homey.
-
-Note! I created this app to add support for one of my devices. 
-Feel free to change it as you please! God bless open source software!
-
+If you like the work, please help me buy a stroller for my future kid :D 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
+</form>
 
 
 Currently supported devices:
-* ZME_KFOB  - http://products.z-wavealliance.org/products/1282	Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 277, productTypeId: 256, productId: 259
-* 064381  - http://www.pepper1.net/zwavedb/device/11	Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 100, productTypeId: 12289, productId: 0
-* 064381_Out  - http://products.z-wavealliance.org/products/353	Patrick van der Westen (pvdwesten at hotmail.com)* WALLC-S_V2 - http://products.z-wavealliance.org/products/1086   Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 100, productTypeId: 0, productId: 0
-* WALLC-S_V2 - http://products.z-wavealliance.org/products/1086   Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 340, productTypeId: 256, productId: 257
-* WALLC-S - http://products.z-wavealliance.org/products/1086   Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 277, productTypeId: 256, productId: 257
-* 054375  - http://www.pepper1.net/zwavedb/device/11	Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 100, productTypeId: 12289, productId: 0
-* 064394  - http://www.pepper1.net/zwavedb/device/31	Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 100, productTypeId: 4096, productId: 0
-* 064367  - http://www.pepper1.net/zwavedb/device/32	Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 100, productTypeId: 16385, productId: 0
-* 054336  - http://www.pepper1.net/zwavedb/device/33	Patrick van der Westen (pvdwesten at hotmail.com)
-** # manufacturerId: 100, productTypeId: 1, productId: 0
-* 054336Z - http://www.pepper1.net/zwavedb/device/145	(In Drivers as ZME_05468)
-** # manufacturerId: 277, productTypeId: 4096, productId: 2
-* 05461   -	http://www.pepper1.net/zwavedb/device/564  	Robin van Kekem (nl.inversion@gmail.com)
-** # manufacturerId: 277, productTypeId: 4096, productId: 256
-* 054367Z - http://www.pepper1.net/zwavedb/device/119	Marco Frijmann (marco@frijmann.nl)
-** # manufacturerId: 277, productTypeId: 4096, productId: 3
-* 054313  -	http://www.pepper1.net/zwavedb/device/18
-** # manufacturerId: 100, productTypeId: 4096, productId: 9
-* 05431   -	http://www.pepper1.net/zwavedb/device/18
-** # manufacturerId: 100, productTypeId: 8193, productId: 0
-* 05457   -	http://www.pepper1.net/zwavedb/device/266
-** # manufacturerId: 277, productTypeId: 4096, productId: 1 Patrick van der Westen (pvdwesten at hotmail.com)
+* ZME_KFOB 		- keychain
+* 064381 		- Plugin switch
+* 05439 		- Plugin dimmer
+* 064381_Out	- outdoor plugin switch
+* WALLC-S_V2 	- Wall controller
+* WALLC-S 		- Wall controller
+* 054375  		- Built-in switch
+* 064394  		- Plugin dimmer
+* 064367  		- Built-in blind control
+* 054336  		- Built-in dimmer
+* 054336Z 		- Built-in dimmer
+* 05461   		- Built-in double switch
+* 054367Z 		- Built-in blind control
+* 054313  		- Built-in switch
+* 05431   		- Built-in switch
+* 05457   		- Built-in switch
 
 
 Currently supported languages:
@@ -46,12 +36,12 @@ Currently supported languages:
 * German (Deutsch) - On a couple of devices
 
 
-Additional information:
-* Icons generated using: http://www.mobilefish.com/services/image2svg/image2svg.php
-* Original source is com.fibaro project (https://github.com/athombv/com.fibaro)
-
-
 Changelog:
+0.1.1
+* Changed repository
+* Changed readme
+
+
 0.1.0
 * Added Device 05457 (built in switch)
 * Shortend info text for KFOB, WALLC-S and WALLC-S_V2

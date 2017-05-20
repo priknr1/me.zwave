@@ -3,7 +3,7 @@
     "name": {
         "en": "Z-Wave.Me"
     },
-    "version": "0.1.0",
+    "version": "0.1.1",
     "compatibility": ">=1.1.0",
     "description": {
         "en": "Z-Wave.Me devices for Homey",
@@ -18,14 +18,18 @@
         "small": "/assets/images/small.png"
     },
     "author": {
-        "name": "Icarus",
-        "email": "msuylen@gmail.com"
+		"name": "Patrick van der Westen",
+		"email": "pvdwesten@hotmail.com"
     },
     "contributors": {
         "developers": [
-		            {
+            {
                 "name": "Martijn Suijlen",
                 "email": "msuylen+homey@gmail.com"
+            },
+            {
+				"name": "Icarus",
+				"email": "msuylen@gmail.com"
             },
             {
                 "name": "Bart Kockx",
@@ -46,10 +50,6 @@
             {
                 "name": "Marco van 't Klooster",
                 "email": "info@marcovantklooster.nl"
-            },
-            {
-                "name": "Patrick van der Westen",
-                "email": "pvdwesten@hotmail.com"
             }
         ]
     },
