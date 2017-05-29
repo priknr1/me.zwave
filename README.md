@@ -1,5 +1,7 @@
 ﻿# Z-Wave.Me
 
+This repository has moved. Please use https://github.com/priknr1/me.zwave to open up any issues!
+
 This app adds support for Z-Wave.Me devices to Homey.
 If you like the work, please help me buy a stroller for my future kid :D 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
