@@ -3,7 +3,7 @@
     "name": {
         "en": "Z-Wave.Me"
     },
-    "version": "0.1.2",
+    "version": "0.1.1",
     "compatibility": ">=1.1.0",
     "description": {
         "en": "Z-Wave.Me devices for Homey",
@@ -24,12 +24,32 @@
     "contributors": {
         "developers": [
             {
-				"name": "Patrick van der Westen",
-				"email": "pvdwesten@hotmail.com"
+                "name": "Martijn Suijlen",
+                "email": "msuylen+homey@gmail.com"
             },
             {
-				"name": "Martijn Suijlen",
+				"name": "Icarus",
 				"email": "msuylen@gmail.com"
+            },
+            {
+                "name": "Bart Kockx",
+                "email": "bkockx@gmail.com"
+            },
+            {
+                "name": "Robin van Kekem",
+                "email": "nl.inversion@gmail.com"
+            },
+            {
+                "name": "Marco Frijmann",
+                "email": "marco@frijmann.nl"
+            },
+            {
+                "name": "Jelger Haanstra",
+                "email": "homey@solidewebservices.com"
+            },
+            {
+                "name": "Marco van 't Klooster",
+                "email": "info@marcovantklooster.nl"
             }
         ]
     },
@@ -717,7 +737,7 @@
 		"zwave": {
 			"manufacturerId": 277,
 			"productTypeId": 256,
-			"productId": [4,257],
+			"productId": 257,
 			"wakeUpInterval": 1800,
 			"learnmode": {
 				"image": "/drivers/WALLC-S/assets/learnmode.svg",
