@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/IcarusProject/me.zwave.git"
+    "url": "git+ssh://git@bitbucket.org/Priknr1/me.zwave.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/IcarusProject/me.zwave#readme"
+  "homepage": "https://bitbucket.org/Priknr1/me.zwave#readme"
 }
