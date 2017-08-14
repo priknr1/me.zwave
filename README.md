@@ -37,7 +37,8 @@ Currently supported languages:
 
 
 Changelog:
-0.1.2
+
+0.1.3
 * Added product type ID for Outdoor plugin
 
 0.1.1
