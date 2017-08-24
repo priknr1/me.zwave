@@ -6,7 +6,7 @@ const ZwaveDriver = require("homey-zwavedriver");
 // http://products.z-wavealliance.org/products/1282
 
 module.exports = new ZwaveDriver(path.basename(__dirname), {
-    debug: true,
+    debug: false,
     capabilities: {
         measure_battery: {			
 			// http://z-wave.sigmadesigns.com/wp-content/uploads/2016/08/SDS12657-12-Z-Wave-Command-Class-Specification-A-M.pdf, page 125
@@ -42,70 +42,70 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "button_2_and_4_pair_mode": {
             "index": 2,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "command_to_control_group_a": {
             "index": 11,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "command_to_control_group_b": {
             "index": 12,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "command_to_control_group_c": {
             "index": 13,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "command_to_control_group_d": {
             "index": 14,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "send_the_following_switch_sll_commands": {
             "index": 21,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "invert_buttons": {
             "index": 22,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([( input === true ) ? 1 : 0]);
-            }
+            },
         },
         "blocks_wakeup_even_when_wakeup_interval_is_set": {
             "index": 25,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         },
         "send_unsolicited_battery_report_on_wake_up": {
             "index": 30,
             "size": 1,
             "parser": function (input) {
                 return new Buffer([parseInt(input)]);
-            }
+            },
         }
     }
 })

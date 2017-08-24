@@ -51,28 +51,28 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 			"size": 2,
 			"parser": function( input ) {
 				return new Buffer([ parseInt(input) ]);
-			}
+			},
 		},
 		"energy_consumption_first_channel": {
 			"index": 20,
 			"size": 2,
 			"parser": function( input ) {
 				return new Buffer([ parseInt(input) ]);
-			}
+			},
 		},
 		"switch_second_channel_off_after": {
 			"index": 22,
 			"size": 2,
 			"parser": function( input ) {
 				return new Buffer([ parseInt(input) ]);
-			}
+			},
 		},
 		"energy_consumption_second_channel": {
 			"index": 40,
 			"size": 2,
 			"parser": function( input ) {
 				return new Buffer([ parseInt(input) ]);
-			}
+			},
 		}
 	}
 })

@@ -48,15 +48,15 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 	settings: {
 		"switch_off_after": {
 			"index": 2,
-			"size": 2
+			"size": 2,
 		},
         "switch_by_buttons": {
 			"index": 12,
-			"size": 1
+			"size": 1,
 		},
         "button_down_press": {
 			"index": 16,
-			"size": 1
+			"size": 1,
 		}
 	}
 })
