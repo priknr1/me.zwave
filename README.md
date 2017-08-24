@@ -39,7 +39,7 @@ Currently supported languages:
 Changelog:
 
 0.1.4
-Syntax error in all driver's settings fixed
+* Syntax error in all driver's settings fixed
 
 0.1.3
 * Added product type ID for Outdoor plugin
