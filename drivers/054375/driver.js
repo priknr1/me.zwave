@@ -9,20 +9,16 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 		debug : false,
 		capabilities : {
 			'onoff' : {
-				'command_class' : 'COMMAND_CLASS_SWITCH_MULTILEVEL',
-				'command_get' : 'SWITCH_MULTILEVEL_GET',
-				'command_set' : 'SWITCH_MULTILEVEL_SET',
-				'command_set_parser' : function (value) {
-					return {
-						'Value' : value ? 'on/enable' : 'off/disable',
-						'Dimming Duration' : 1
-					}
-				},
-				'command_report' : 'SWITCH_MULTILEVEL_REPORT',
-				'command_report_parser' : function (report) {
-					return report['Value (Raw)'][0] > 0;
-				}
-			}			
+				'command_class' : 'COMMAND_CLASS_SWITCH_BINARY',
+				'command_get' : 'SWITCH_BINARY_GET',
+				'command_set' : 'SWITCH_BINARY_SET',
+				'command_set_parser' : value => ({
+					'Switch Value': (value) ? 'on/enable' : 'off/disable'
+				}),
+				'command_report' : 'SWITCH_BINARY_REPORT',
+				'command_report_parser': report => report.Value === 'on/enable',
+				'pollInterval': 'poll_interval'
+			}
 		},
 		settings : {
 		"switch_first_channel_off_after": {
