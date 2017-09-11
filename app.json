@@ -3,7 +3,7 @@
     "name": {
         "en": "Z-Wave.Me"
     },
-    "version": "0.1.4",
+    "version": "0.1.5",
     "compatibility": ">=1.1.0",
     "description": {
         "en": "Z-Wave.Me devices for Homey",
@@ -23,10 +23,6 @@
     },
     "contributors": {
         "developers": [
-            {
-                "name": "Martijn Suijlen",
-                "email": "msuylen+homey@gmail.com"
-            },
             {
 				"name": "Icarus",
 				"email": "msuylen@gmail.com"
@@ -4255,7 +4251,7 @@
                         "de": "Drücken Sie die Taste dreimal"
                     }
                 },
-                "associationGroups": [1,1,1]
+                "associationGroups": [1,2]
             },
             "class": "socket",
             "capabilities": ["onoff"],
@@ -4264,6 +4260,42 @@
                 "small": "/drivers/064381_out/assets/images/small.png"
             },
             "settings": [
+                {
+                    "id": "led_mode",
+                    "type": "dropdown",
+                    "label": {
+                        "en": "LED mode",
+                        "nl": "LED modus"
+                    },
+                    "value": "1",
+                    "hint": {
+                        "en": "Set LED Indication mode",
+                        "nl": "Zet LED Indicatie modus"
+                    },
+                    "values": [
+                        {
+                            "id": "0",
+                            "label": {
+                                "en": "Disable",
+                                "nl": "Uitschakelen"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "label": {
+                                "en": "Show Switch",
+                                "nl": "Toon schakelen"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "label": {
+                                "en": "Operated by Indicator Command Class",
+                                "nl": "Bediend door Indicator Command Class"
+                            }
+                        }
+                    ]
+                },
                 {
                     "id": "switch_off_after",
                     "type": "number",
@@ -4281,53 +4313,17 @@
                         "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden."
                     }
                 },
-                {
-                    "id": "switch_by_buttons",
+				{
+                    "id": "RF_off_command",
                     "type": "dropdown",
                     "label": {
-                        "en": "Switch by buttons",
-                        "nl": "Schakel door knoppen"
-                    },
-                    "value": "1",
-                    "hint": {
-                        "en": "If disabled, the local operations by buttons will not switch the load, but only send commands to On/Off association group.",
-                        "nl": "Indien uitgeschakeld zullen de knoppen niet meer schakelen maar alleen een aan/uit commando versturen naar de associatie groep."
-                    },
-                    "values": [
-                        {
-                            "id": "0",
-                            "label": {
-                                "en": "No",
-                                "nl": "Nee"
-                            }
-                        },
-                        {
-                            "id": "1",
-                            "label": {
-                                "en": "By single press and hold",
-                                "nl": "Door enkel drukken en vasthouden"
-                            }
-                        },
-                        {
-                            "id": "2",
-                            "label": {
-                                "en": "By double press and press-hold",
-                                "nl": "Door dubbel drukken en vasthouden"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "button_down_press",
-                    "type": "dropdown",
-                    "label": {
-                        "en": "What to do on button Down press",
-                        "nl": "Wat te doen by drukken op uitschakelen"
+                        "en": "RF off command",
+                        "nl": "RF uit commando"
                     },
                     "value": "0",
                     "hint": {
-                        "en": "Defines how to interpret button Down press. Depends on 'Switch by buttons' parameter. If not Disabled this parameter will affect the action selected by the latter parameter.",
-                        "nl": "Bepaalt hoe het drukken op uitschakelen wordt afgehandeld. Is afhankelijk van 'Schakelen door knopppen' parameter. Indien deze niet is uitgeschakeld bepaald deze parameter welke actie wordt ondernomen bij het uitschakelen."
+                        "en": "Defines how to interpret RF Off-Command",
+                        "nl": "Hoe het RF uit commando moet worden behandeld"
                     },
                     "values": [
                         {
@@ -4340,19 +4336,42 @@
                         {
                             "id": "1",
                             "label": {
-                                "en": "Switch On if load is Off, else switch Off",
-                                "nl": "Inschakelen indien uitgeschakeld, anders uitschakelen"
+                                "en": "Ignore",
+                                "nl": "Negeren"
                             }
                         },
                         {
                             "id": "2",
                             "label": {
                                 "en": "Switch on",
-                                "nl": "Inschakelen"
+                                "nl": "Aanzetten"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "label": {
+                                "en": "Switch on is load is off, else switch off (toggle)",
+                                "nl": "Aanzetten als last uit staat, anders uitzetten (toggle)"
                             }
                         }
                     ]
-                }
+                },
+				{
+					"id": "restore_state_power",
+					"type": "checkbox",
+					"label": 
+					{
+						"en": "Restore switch state after power cycle",
+                        "nl": "Herstel status na stroomuitval"
+					},
+					"value": false,
+					"hint": 
+					{
+						"en": "Defines if the switch should restore switch state to the last prior to device power off (power cycle).",
+                        "nl": "Definieert of de schakelaar de laatste status moet herstellen in geval van stroomuitval"
+					}
+
+				}
             ]
         },
         {
@@ -4374,7 +4393,7 @@
                         "de": "Drücken Sie die Taste dreimal"
                     }
                 },
-                "associationGroups": [1,1,1]
+                "associationGroups": [1,2]
             },
             "class": "socket",
             "capabilities": ["onoff"],
@@ -4383,6 +4402,42 @@
                 "small": "/drivers/064381/assets/images/small.png"
             },
             "settings": [
+                {
+                    "id": "led_mode",
+                    "type": "dropdown",
+                    "label": {
+                        "en": "LED mode",
+                        "nl": "LED modus"
+                    },
+                    "value": "1",
+                    "hint": {
+                        "en": "Set LED Indication mode",
+                        "nl": "Zet LED Indicatie modus"
+                    },
+                    "values": [
+                        {
+                            "id": "0",
+                            "label": {
+                                "en": "Disable",
+                                "nl": "Uitschakelen"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "label": {
+                                "en": "Show Switch",
+                                "nl": "Toon schakelen"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "label": {
+                                "en": "Operated by Indicator Command Class",
+                                "nl": "Bediend door Indicator Command Class"
+                            }
+                        }
+                    ]
+                },
                 {
                     "id": "switch_off_after",
                     "type": "number",
@@ -4400,53 +4455,17 @@
                         "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden."
                     }
                 },
-                {
-                    "id": "switch_by_buttons",
+				{
+                    "id": "RF_off_command",
                     "type": "dropdown",
                     "label": {
-                        "en": "Switch by buttons",
-                        "nl": "Schakel door knoppen"
-                    },
-                    "value": "1",
-                    "hint": {
-                        "en": "If disabled, the local operations by buttons will not switch the load, but only send commands to On/Off association group.",
-                        "nl": "Indien uitgeschakeld zullen de knoppen niet meer schakelen maar alleen een aan/uit commando versturen naar de associatie groep."
-                    },
-                    "values": [
-                        {
-                            "id": "0",
-                            "label": {
-                                "en": "No",
-                                "nl": "Nee"
-                            }
-                        },
-                        {
-                            "id": "1",
-                            "label": {
-                                "en": "By single press and hold",
-                                "nl": "Door enkel drukken en vasthouden"
-                            }
-                        },
-                        {
-                            "id": "2",
-                            "label": {
-                                "en": "By double press and press-hold",
-                                "nl": "Door dubbel drukken en vasthouden"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "button_down_press",
-                    "type": "dropdown",
-                    "label": {
-                        "en": "What to do on button Down press",
-                        "nl": "Wat te doen by drukken op uitschakelen"
+                        "en": "RF off command",
+                        "nl": "RF uit commando"
                     },
                     "value": "0",
                     "hint": {
-                        "en": "Defines how to interpret button Down press. Depends on 'Switch by buttons' parameter. If not Disabled this parameter will affect the action selected by the latter parameter.",
-                        "nl": "Bepaalt hoe het drukken op uitschakelen wordt afgehandeld. Is afhankelijk van 'Schakelen door knopppen' parameter. Indien deze niet is uitgeschakeld bepaald deze parameter welke actie wordt ondernomen bij het uitschakelen."
+                        "en": "Defines how to interpret RF Off-Command",
+                        "nl": "Hoe het RF uit commando moet worden behandeld"
                     },
                     "values": [
                         {
@@ -4459,19 +4478,42 @@
                         {
                             "id": "1",
                             "label": {
-                                "en": "Switch On if load is Off, else switch Off",
-                                "nl": "Inschakelen indien uitgeschakeld, anders uitschakelen"
+                                "en": "Ignore",
+                                "nl": "Negeren"
                             }
                         },
                         {
                             "id": "2",
                             "label": {
                                 "en": "Switch on",
-                                "nl": "Inschakelen"
+                                "nl": "Aanzetten"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "label": {
+                                "en": "Switch on is load is off, else switch off (toggle)",
+                                "nl": "Aanzetten als last uit staat, anders uitzetten (toggle)"
                             }
                         }
                     ]
-                }
+                },
+				{
+					"id": "restore_state_power",
+					"type": "checkbox",
+					"label": 
+					{
+						"en": "Restore switch state after power cycle",
+                        "nl": "Herstel status na stroomuitval"
+					},
+					"value": false,
+					"hint": 
+					{
+						"en": "Defines if the switch should restore switch state to the last prior to device power off (power cycle).",
+                        "nl": "Definieert of de schakelaar de laatste status moet herstellen in geval van stroomuitval"
+					}
+
+				}
             ]
         },
         {

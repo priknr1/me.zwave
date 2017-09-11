@@ -38,6 +38,9 @@ Currently supported languages:
 
 Changelog:
 
+0.1.5
+Added missing settings in driver for 064381 and 064381_out
+
 0.1.4
 * Syntax error in all driver's settings fixed
 

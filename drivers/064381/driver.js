@@ -25,33 +25,24 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 			}			
 		},
 		settings : {
-		"switch_first_channel_off_after": {
+		"led_mode": {
+			"index": 1,
+			"size": 1,
+		},
+		"switch_off_after": {
 			"index": 2,
 			"size": 2,
 			"parser": function( input ) {
 				return new Buffer([ parseInt(input) ]);
 			},
 		},
-		"energy_consumption_first_channel": {
-			"index": 20,
-			"size": 2,
-			"parser": function( input ) {
-				return new Buffer([ parseInt(input) ]);
-			},
+		"RF_off_command": {
+			"index": 3,
+			"size": 1,
 		},
-		"switch_second_channel_off_after": {
-			"index": 22,
-			"size": 2,
-			"parser": function( input ) {
-				return new Buffer([ parseInt(input) ]);
-			},
-		},
-		"energy_consumption_second_channel": {
-			"index": 40,
-			"size": 2,
-			"parser": function( input ) {
-				return new Buffer([ parseInt(input) ]);
-			},
+		"restore_state_power": {
+			"index": 5,
+			"size": 1,
 		}
 	}
 	})
