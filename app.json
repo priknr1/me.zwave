@@ -3,7 +3,7 @@
     "name": {
         "en": "Z-Wave.Me"
     },
-    "version": "0.1.5",
+    "version": "0.1.6",
     "compatibility": ">=1.1.0",
     "description": {
         "en": "Z-Wave.Me devices for Homey",
@@ -376,7 +376,7 @@
 				5
 			]
 		},
-		"class": "zwavecontroller",
+		"class": "sensor",
 		"capabilities": [
 			"measure_battery"
 		],
@@ -750,7 +750,7 @@
 				5
 			]
 		},
-		"class": "zwavecontroller",
+		"class": "sensor",
 		"capabilities": [
 			"measure_battery"
 		],
@@ -1123,7 +1123,7 @@
 				5
 			]
 		},
-		"class": "zwavecontroller",
+		"class": "sensor",
 		"capabilities": [
 			"measure_battery"
 		],
@@ -3256,22 +3256,22 @@
                 "associationGroups": [1, 2, 3],
                 "defaultConfiguration": [
                     {
-                        "id": "switch_first_channel_off_after",
+                        "id": 2,
                         "size": 2,
                         "value": 0
                     },
                     {
-                        "id": "energy_consumption_first_channel",
+                        "id": 20,
                         "size": 2,
                         "value": 0
                     },
                     {
-                        "id": "switch_second_channel_off_after",
+                        "id": 22,
                         "size": 2,
                         "value": 0
                     },
                     {
-                        "id": "energy_consumption_second_channel",
+                        "id": 40,
                         "size": 2,
                         "value": 0
                     }
@@ -3385,59 +3385,59 @@
                 "associationGroups": [1, 2, 3],
                 "defaultConfiguration": [
                     {
-                        "id": "led_mode",
+                        "id": 1,
                         "size": 1,
                         "value": 3
                     }, {
-                        "id": "auto_close_after",
+                        "id": 2,
                         "size": 2,
                         "value": 0
                     }, {
-                        "id": "what_to_do_on_RF_close_command",
+                        "id": 3,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "full_close_time",
+                        "id": 4,
                         "size": 1,
                         "value": 60
                     }, {
-                        "id": "full_open_time",
+                        "id": 5,
                         "size": 1,
                         "value": 60
                     }, {
-                        "id": "node_id_of_the_blocking_device",
+                        "id": 6,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "on_which_command_from_blocking_node_to_enable_the_protection",
+                        "id": 7,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "stop_or_revert_if_opposite_button_is_pressed",
+                        "id": 8,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "invert_open_and_close_relays",
+                        "id": 9,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "typical_click_timeout",
+                        "id": 10,
                         "size": 1,
                         "value": 50
                     }, {
-                        "id": "invert_buttons",
+                        "id": 11,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "switch_by_buttons",
+                        "id": 12,
                         "size": 1,
                         "value": 1
                     }, {
-                        "id": "action_on_button_single_press_or_hold",
+                        "id": 13,
                         "size": 1,
                         "value": 1
                     }, {
-                        "id": "send_the_following_switch_all_commands",
+                        "id": 15,
                         "size": 1,
                         "value": 1
                     }
@@ -3757,59 +3757,59 @@
                 "associationGroups": [1, 2, 3],
                 "defaultConfiguration": [
                     {
-                        "id": "led_mode",
+                        "id": 1,
                         "size": 1,
                         "value": 3
                     }, {
-                        "id": "auto_close_after",
+                        "id": 2,
                         "size": 2,
                         "value": 0
                     }, {
-                        "id": "what_to_do_on_RF_close_command",
+                        "id": 3,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "full_close_time",
+                        "id": 4,
                         "size": 1,
                         "value": 60
                     }, {
-                        "id": "full_open_time",
+                        "id": 5,
                         "size": 1,
                         "value": 60
                     }, {
-                        "id": "node_id_of_the_blocking_device",
+                        "id": 6,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "on_which_command_from_blocking_node_to_enable_the_protection",
+                        "id": 7,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "stop_or_revert_if_opposite_button_is_pressed",
+                        "id": 8,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "invert_open_and_close_relays",
+                        "id": 9,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "typical_click_timeout",
+                        "id": 10,
                         "size": 1,
                         "value": 50
                     }, {
-                        "id": "invert_buttons",
+                        "id": 11,
                         "size": 1,
                         "value": 0
                     }, {
-                        "id": "switch_by_buttons",
+                        "id": 12,
                         "size": 1,
                         "value": 1
                     }, {
-                        "id": "action_on_button_single_press_or_hold",
+                        "id": 13,
                         "size": 1,
                         "value": 1
                     }, {
-                        "id": "send_the_following_switch_all_commands",
+                        "id": 15,
                         "size": 1,
                         "value": 1
                     }
