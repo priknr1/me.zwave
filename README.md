@@ -38,6 +38,9 @@ Currently supported languages:
 
 Changelog:
 
+0.1.6
+Changes needed for verification (and thus installation) in Homey V2.0
+
 0.1.5
 Added missing settings in driver for 064381 and 064381_out
 
