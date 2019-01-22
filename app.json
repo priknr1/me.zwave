@@ -3,7 +3,8 @@
     "name": {
         "en": "Z-Wave.Me"
     },
-	"sdk": 2;
+	"brandColor": "#000000",
+	"sdk": 2,
     "version": "0.2.1",
     "compatibility": ">=1.5.6",
     "description": {
