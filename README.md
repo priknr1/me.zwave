@@ -37,6 +37,8 @@ Currently supported languages:
 
 
 Changelog:
+0.2.1
+First rebuild to SDK2
 
 0.1.6
 Changes needed for verification (and thus installation) in Homey V2.0

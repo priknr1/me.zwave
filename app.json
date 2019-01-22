@@ -3,15 +3,18 @@
     "name": {
         "en": "Z-Wave.Me"
     },
-    "version": "0.1.6",
-    "compatibility": ">=1.1.0",
+	"sdk": 2;
+    "version": "0.2.1",
+    "compatibility": ">=1.5.6",
     "description": {
         "en": "Z-Wave.Me devices for Homey",
         "nl": "Z-Wave.Me apparaten voor Homey",
         "de": "Z-Wave.Me Geräte für Homey"
     },
     "category": 
-		[	"lights"
+		[    
+		"appliances",
+		"lights"
 		],
     "images": {
         "large": "/assets/images/large.png",
@@ -24,28 +27,8 @@
     "contributors": {
         "developers": [
             {
-				"name": "Icarus",
-				"email": "msuylen@gmail.com"
-            },
-            {
-                "name": "Bart Kockx",
-                "email": "bkockx@gmail.com"
-            },
-            {
-                "name": "Robin van Kekem",
-                "email": "nl.inversion@gmail.com"
-            },
-            {
-                "name": "Marco Frijmann",
-                "email": "marco@frijmann.nl"
-            },
-            {
-                "name": "Jelger Haanstra",
-                "email": "homey@solidewebservices.com"
-            },
-            {
-                "name": "Marco van 't Klooster",
-                "email": "info@marcovantklooster.nl"
+				"name": "Patrick",
+				"email": "pvdwesten@hotmail.com"
             }
         ]
     },
