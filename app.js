@@ -1,5 +1,11 @@
 "use strict";
 
-module.exports.init = function() {
-	Homey.log("me.zwave running...");
+const Homey = require('homey');
+
+class ZwaveMeApp extends Homey.App {
+	onInit() {
+		this.log(`${this.homey.manifest.id} running...`);
+	}
 }
+
+module.exports = ZwaveMeApp;

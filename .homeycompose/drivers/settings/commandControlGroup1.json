@@ -1,0 +1,60 @@
+{
+    "type": "dropdown",
+    "label": {
+      "en": "Command to Control Group A"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group A when the related button is pressed."
+    },
+    "value": "8",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "(0) Disabled"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "(1) Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "(3) Switch On/Off only (send Basic Set)"
+        }
+      },
+      {
+        "id": "3",
+        "label": {
+          "en": "(3) Switch All"
+        }
+      },
+      {
+        "id": "4",
+        "label": {
+          "en": "(4) Send Scenes"
+        }
+      },
+      {
+        "id": "5",
+        "label": {
+          "en": "(5) Send Preconfigured Scenes"
+        }
+      },
+      {
+        "id": "7",
+        "label": {
+          "en": "(7) Control DoorLock"
+        }
+      },
+      {
+        "id": "8",
+        "label": {
+          "en": "(8) Central Scene to Gateway (Default)"
+        }
+      }
+    ]
+}

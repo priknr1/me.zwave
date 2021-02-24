@@ -1,0 +1,27 @@
+{
+    "type": "dropdown",
+    "label": {
+        "en": "Blocks wakeup even when wakeup interval is set."
+    },
+    "value": "1",
+    "hint": {
+        "en": "If the {{driverNameEn}} wakes up and there is no controller nearby, several unsuccessful communication attempts will drain battery.",
+        "nl": "Als de {{driverNameEn}} wakker word en er geen controller dichtbij is, zal de batterij snel leeg lopen bij veelvuldig onsucesvolle communicatie."
+    },
+    "values": [
+        {
+            "id": "0",
+            "label": {
+                "en": "(0) Wakeup is blocked.",
+                "nl": "(0) Wakeup is niet toegestaan."
+            }
+        },
+        {
+            "id": "1",
+            "label": {
+                "en": "(1) Wakeup is possible if configured accordingly. (Default)",
+                "nl": "(1) Wakeup is mogelijk bij goede configuratie. (Default)"
+            }
+        }
+    ]
+}

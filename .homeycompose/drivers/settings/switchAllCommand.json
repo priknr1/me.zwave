@@ -1,0 +1,35 @@
+{
+    "type": "dropdown",
+    "label": {
+      "en": "Switch All command behavior.",
+      "nl": "Switch All commando gedrag."
+    },
+    "value": "1",
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines what kind of Switch All command are allowed to be send.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald het gedrag van het Switch All commando."
+    },
+    "values": [
+      {
+        "id": "1",
+        "label": {
+          "en": "(1) Switch off only. (Default)",
+          "nl": "(1) Alleen uit commando. (Default)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "(2) Switch on only.",
+          "nl": "(2) Alleen aan commando."
+        }
+      },
+      {
+        "id": "255",
+        "label": {
+          "en": "(255) Switch all on and off.",
+          "nl": "(255) Zowel, aan als uit commando."
+        }
+      }
+    ]
+  }

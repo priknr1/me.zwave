@@ -1,0 +1,106 @@
+[
+  {
+    "$extends": "pairModeButton1_3",
+    "$id": "button_1_and_3_pair_mode",
+    "zwave": {
+      "index": 1,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "pairModeButton2_4",
+    "$id": "button_2_and_4_pair_mode",
+    "zwave": {
+      "index": 2,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "commandControlGroup",
+    "$id": "command_to_control_group_a",
+    "label": {
+      "en": "Command to Control Group A"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group A when the related button is pressed."
+    },
+    "zwave": {
+      "index": 11,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "commandControlGroup",
+    "$id": "command_to_control_group_b",
+    "label": {
+      "en": "Command to Control Group B"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group B when the related button is pressed."
+    },
+    "zwave": {
+      "index": 12,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "commandControlGroup",
+    "$id": "command_to_control_group_c",
+    "label": {
+      "en": "Command to Control Group C"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group C when the related button is pressed."
+    },
+    "zwave": {
+      "index": 13,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "commandControlGroup",
+    "$id": "command_to_control_group_d",
+    "label": {
+      "en": "Command to Control Group D"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) defines the command to be sent to devices of control group D when the related button is pressed."
+    },
+    "zwave": {
+      "index": 14,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "switchAllCommand",
+    "id": "send_the_following_switch_sll_commands",
+    "zwave": {
+      "index": 21,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "invertButtons",
+    "id": "invert_buttons",
+    "zwave": {
+      "index": 22,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "blockWakeup",
+    "id": "blocks_wakeup_even_when_wakeup_interval_is_set",
+    "zwave": {
+      "index": 25,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "batteryStatusOnWakeup",
+    "id": "send_unsolicited_battery_report_on_wake_up",
+    "zwave": {
+      "index": 30,
+      "size": 1
+    }
+  }
+]

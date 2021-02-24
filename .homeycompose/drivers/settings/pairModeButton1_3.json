@@ -1,0 +1,35 @@
+{
+    "type": "dropdown",
+    "label": {
+      "en": "Button 1 and 3 pair mode",
+      "nl": "Knop 1 and 3 pair modes"
+    },
+    "value": "1",
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of buttons 1 and 3.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald het gedrag van de knoppen 1 en 3."
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "(0) Seperately, In separate mode button 1 works with control group A, button 3 with control group C. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down.",
+          "nl": "(0) Appart, In apparte modes, werkt knop 1 met groep A en knop 3 met groep C. 1x Klikken aan, vasthouden is omhoog dimming, 2x klikken click is Off, klik-vasthouden is omlaag dimming."
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "(1) Pair without double clicks, In pair button A/C are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group A and C.",
+          "nl": "(1) Combineren zonder dubbel klikken. In cobiminatie modes zijn Knoppen 1 en 3 respectivelijk aan/uit of bij vast houden omhoog of omlaag. Klikken werkt met groep A en C."
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "(2) Pair with double clicks. In pair button A/C are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group A,double click with group C.",
+          "nl": "(2) Combineren met dubbel klikken. In cobiminatie modes zijn Knoppen 1 en 3 respectivelijk aan/uit of bij vast houden omhoog of omlaag. 1x klikken werkt met groep A, 2x klikken met groep C."
+        }
+      }
+    ]
+  }

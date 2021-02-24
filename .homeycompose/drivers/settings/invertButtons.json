@@ -1,0 +1,10 @@
+{
+    "type": "checkbox",
+    "label": {
+      "en": "Invert buttons"
+    },
+    "value": false,
+    "hint": {
+      "en": "Invert the behaviour of the buttons."
+    }
+}
