@@ -1,0 +1,43 @@
+{
+  "id": "button_down_press",
+  "type": "dropdown",
+  "label": {
+    "en": "Button press behavior.",
+    "nl": "Knop schakel gedrag."
+  },
+  "value": "0",
+  "hint": {
+    "en": "This parameter ({{zwaveParameterIndex}}) defines how to interpret button Down press. Depends on 'Switch by buttons' parameter. If not Disabled this parameter will affect the action selected by the latter parameter.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald hoe het gedrag van een druk op de knop geïnterpreteerd moet worden. Hangt af van 'Wissel met knop' parameter. Wanneer deze niet is uitgeschakeld, zal deze parameter het actie gedrag bepalen."
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Switch off (Default)",
+        "nl": "Schakel uit (Default)",
+        "de": "Schalte aus"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Toggle switch",
+        "nl": "Toggle status",
+        "de": "Status umschalten"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Switch on",
+        "nl": "Schakel aan",
+        "de": "Schalte ein"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 16,
+    "size": 1
+  }
+}

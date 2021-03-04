@@ -1,0 +1,45 @@
+{
+  "id": "rf_off_command",
+  "type": "dropdown",
+  "label": {
+    "en": "What to do on RF off command",
+    "nl": "Wat te doen op RF-uit commando",
+    "de": "Was auf RF aus-Befehl zu tun"
+  },
+  "value": "0",
+  "hint": {
+    "en": "Defines how to interpret RF Off command.",
+    "nl": "Definieert hoe het RF uit commando te interpreteren is.",
+    "de": "Legt fest, wie RF-Aus-Befehl zu interpretieren."
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Switch off",
+        "nl": "Uischakeld",
+        "de": "Ausschalten"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Ignore",
+        "nl": "Negeren",
+        "de": "Ignorieren"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Switch on",
+        "nl": "Inschakelen",
+        "de": "Einschalten"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 3,
+    "size": 1
+  }
+}

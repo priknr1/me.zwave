@@ -1,0 +1,33 @@
+{
+  "id": "05431",
+  "name": {
+    "en": "05431 - Düwi Built-in Switch (ZW ES 1000)",
+    "nl": "05431 - Düwi Inbouw Schakelaar (ZW ES 1000)"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff"
+  ],
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 100,
+    "productTypeId": 8193,
+    "productId": 0,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the on or off button three times",
+        "nl": "Druk driemaal op de aan of uit knoppen"
+      }
+    },
+    "associationGroups": [
+      1,
+      2,
+      3
+    ]
+  }
+}

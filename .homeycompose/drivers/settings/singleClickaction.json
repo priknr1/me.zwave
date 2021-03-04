@@ -1,0 +1,45 @@
+{
+  "id": "action_on_single_press_or_hold",
+  "type": "dropdown",
+  "label": {
+    "en": "Action on button single press or hold",
+    "nl": "Aktie bij enkele druk en houden van de knop",
+    "de": "Aktion mit Einzel drücken und halten derr Taste"
+  },
+  "value": "1",
+  "hint": {
+    "en": "Defines which command should be sent on button single press or hold. Basic commands are sent to Association group. Switch All commands are sent broadcast.",
+    "nl": "Definieerd welke opdrachten verzonden moeten worden bij enkel drukken en houden. Basis commando's worden verzonden aan Association group. Switch All commandos worden hierbij verzonden.",
+    "de": "Legt fest, welche befehlen auf die Schaltfläche Einzel drücken oder halten gesendet werden. Basic-Befehle werden zu den Assoziationsgruppe gesendet. Switch All Befehle werden gesendet."
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Disabled",
+        "nl": "Uitgeschakeld",
+        "de": "Ausgeschaltet"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Switch On, Off and dim using Basic Set",
+        "nl": "Schakel aan, uit en dim met behulp van Basic Set",
+        "de": "Schalten Ein, Aus und Dimmen mit Basic Set"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Switch All",
+        "nl": "Schakel allen",
+        "de": "Schalte alle"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 13,
+    "size": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "auto_off",
+  "type": "number",
+  "label": {
+    "en": "Automatically switch off",
+    "nl": "Schakel automatisch uit"
+  },
+  "value": 0,
+  "attr": {
+    "min": 0,
+    "max": 65535
+  },
+  "units": {
+    "en": "s",
+    "nl": "s"
+  },
+  "hint": {
+    "en": "This parameter ({{zwaveParameterIndex}}) defines the time after which the device is off/close blind automatically. Note: setting this parameter to 0 will disable automatically turning off.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd waarna het apparaat zichzelf automatisch uitzet/jaloezien sluit. Let op: het instellen van deze parameter op 0 schakelt het automatisch uit gaan uit."
+  },
+  "zwave": {
+    "index": 2,
+    "size": 2
+  }
+}

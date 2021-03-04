@@ -1,0 +1,46 @@
+[
+  {
+    "$extends": "ledModes"
+  },
+  {
+    "$extends": "autoOff"
+  },
+  {
+    "$extends": "commandRfOff"
+  },
+  {
+    "$extends": "ignoreStartLevel",
+    "zwave": {
+      "index": 4,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "restoreState",
+    "zwave": {
+      "index": 5,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "clickTimeout"
+  },
+  {
+    "$extends": "invertButtons"
+  },
+  {
+    "$extends": "buttonConfig"
+  },
+  {
+    "$extends": "singleClickAction"
+  },
+  {
+    "$extends": "doubleClickAction"
+  },
+  {
+    "$extends": "switchAllCommand"
+  },
+  {
+    "$extends": "buttonDownPress"
+  }
+]

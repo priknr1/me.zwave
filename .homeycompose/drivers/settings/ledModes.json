@@ -1,0 +1,53 @@
+{
+  "id": "led_mode",
+  "type": "dropdown",
+  "label": {
+    "en": "LED Mode",
+    "nl": "LED-modus",
+    "de": "LED-Modus"
+  },
+  "value": "3",
+  "hint": {
+    "en": "Set LED indication mode",
+    "nl": "Zet LED indicatie modus",
+    "de": "LED einstellungen modus setzen"
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Disabled",
+        "nl": "Uitgeschakeld",
+        "de": "Ausgeschaltet"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Show switch state",
+        "nl": "Gebruik schakelaar stand",
+        "de": "Benutze Shalterstand"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Night mode (inverted switch state)",
+        "nl": "Nacht modus (wissel schakelaar stand)",
+        "de": "Nachtbetrieb (wechsel-Schaltzustand)"
+      }
+    },
+    {
+      "id": "3",
+      "label": {
+        "en": "Operated by Indicator Command Class",
+        "nl": "Uitgevoerd door Indicator Command klasse",
+        "de": "Durchgeführt von Indicator Befehlsklasse"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 1,
+    "size": 1
+  }
+}
