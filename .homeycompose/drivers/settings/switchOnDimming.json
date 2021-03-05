@@ -1,0 +1,17 @@
+{
+  "id": "switch_on_dimming",
+  "type": "checkbox",
+  "label": {
+    "en": "Switch on dimming",
+    "nl": "Schakel bij dimmen"
+  },
+  "value": false,
+  "hint": {
+    "en": "This parameter ({{zwaveParameterIndex}}) Defines if the switch should change it state to on/off if it is dimmed by buttons.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald of de schakelstand moet veranderen bij een dim actie."
+  },
+  "zwave": {
+    "index": 4,
+    "size": 1
+  }
+}

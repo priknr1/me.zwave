@@ -1,0 +1,33 @@
+{
+  "id": "05457",
+  "name": {
+    "en": "05457 - Z-WAVE.ME  Built-in Switch",
+    "nl": "05457 - Z-WAVE.ME  Inbouw Schakelaar"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff"
+  ],
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 277,
+    "productTypeId": 4096,
+    "productId": 1,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the on or off button three times",
+        "nl": "Druk driemaal op de aan of uit knoppen"
+      }
+    },
+    "associationGroups": [
+      1,
+      2,
+      3
+    ]
+  }
+}
