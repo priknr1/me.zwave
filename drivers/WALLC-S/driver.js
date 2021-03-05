@@ -2,7 +2,7 @@
 
 const Homey = require('homey');
 
-//http://www.pepper1.net/zwavedb/device/554
+//http://devel.pepper1.net/zwavedb/device/554
 //http://products.z-wavealliance.org/products/2110
 class WALLC_S_Driver extends Homey.Driver {
 
