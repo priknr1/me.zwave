@@ -1,4 +1,5 @@
 {
+  "id": "switch_all_command",
   "type": "dropdown",
   "label": {
     "en": "Switch All command behavior.",
@@ -34,5 +35,9 @@
         "de": "Schalte ein und aus."
       }
     }
-  ]
+  ],
+  "zwave": {
+    "index": 15,
+    "size": 1
+  }
 }

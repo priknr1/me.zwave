@@ -1,0 +1,37 @@
+{
+  "id": "064381_out",
+  "name": {
+    "en": "064381_out - Schuko Outdoor plugin Switch",
+    "nl": "064381_out - Schuko plugin schakelaar buiten",
+    "de": "064381_out - Schuko plugin schalter ausser"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 100,
+    "productTypeId": [
+      0,
+      12290
+    ],
+    "productId": 0,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press button three times",
+        "nl": "Druk driemaal op knop",
+        "de": "Drücken Sie die Taste dreimal"
+      }
+    },
+    "associationGroups": [
+      1,
+      2
+    ]
+  }
+}

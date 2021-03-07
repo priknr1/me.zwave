@@ -1,0 +1,24 @@
+[
+  {
+    "$extends": "ledModes"
+  },
+  {
+    "$extends": "autoOff"
+  },
+  {
+    "$extends": "commandRfOff"
+  },
+  {
+    "$extends": "restoreState",
+    "zwave": {
+      "index": 5,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "ledColorOff"
+  },
+  {
+    "$extends": "ledColorOn"
+  }
+]

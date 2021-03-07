@@ -1,0 +1,54 @@
+{
+  "id": "led_on_color",
+  "type": "dropdown",
+  "label": {
+    "en": "On LED Color",
+    "nl": "Aan LED kleur"
+  },
+  "value": "0",
+  "hint": {
+    "en": "This parameter ({{zwaveParameterIndex}}) defines what color the LED should have when the device is switched on.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald kleur van de LED wanneer het apparaat ingeschakeld is."
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Off",
+        "nl": "Uit"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Red",
+        "nl": "Rood"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Green",
+        "nl": "Groen"
+      }
+    },
+    {
+      "id": "3",
+      "label": {
+        "en": "Blue",
+        "nl": "Blauw"
+      }
+    },
+    {
+      "id": "4",
+      "label": {
+        "en": "Yellow",
+        "nl": "Geel"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 22,
+    "size": 1
+  }
+}
