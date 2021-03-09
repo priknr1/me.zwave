@@ -1,6 +1,5 @@
 'use strict';
 
-const Homey = require('homey');
 const { ZwaveDevice } = require('homey-zwavedriver');
 
 // http://devel.pepper1.net/zwavedb/device/18

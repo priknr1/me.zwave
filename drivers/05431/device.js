@@ -1,6 +1,5 @@
 'use strict';
 
-const Homey = require('homey');
 const { ZwaveDevice } = require('homey-zwavedriver');
 
 // http://devel.pepper1.net/zwavedb/device/18
@@ -10,6 +9,5 @@ class Device_05431 extends ZwaveDevice {
     this.registerCapability('onoff', 'SWITCH_BINARY');
   }
 }
-
 
 module.exports = Device_05431;
