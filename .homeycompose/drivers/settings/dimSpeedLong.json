@@ -1,0 +1,27 @@
+{
+  "id": "dimming_long_speed",
+  "type": "number",
+  "label": {
+    "en": "Dimming long speed",
+    "nl": "Dim lange snelheid",
+    "de": "Dim niedriger Geschwindigkeit"
+  },
+  "value": 3,
+  "hint": {
+    "en": "Time to dim on button holds and StartLevelChange command (if it has no duration specified).",
+    "nl": "Tijd om te dimmen bij het ingedrukt houden van de knop en bij het StartLevelCange command (indien er geen duur gespecificeerd is).",
+    "de": "Zeit zu dimmen, wenn die Taste gedrückt bleibt und wenn StartLevelCange Befehl (wenn keine Zeit festgelegt ist)."
+  },
+  "attr": {
+    "min": 1,
+    "max": 255
+  },
+  "units": {
+    "en": "s",
+    "nl": "s"
+  },
+  "zwave": {
+    "index": 6,
+    "size": 1
+  }
+}

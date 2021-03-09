@@ -1,0 +1,15 @@
+{
+  "id": "target_dimming_level",
+  "type": "number",
+  "label": {
+    "en": "Target dimming level for Baby Dimming",
+    "nl": "Doel dim level voor baby dim",
+    "de": "Ziel Dimmlevels für Baby-Dimming"
+  },
+  "value": 0,
+  "hint": {
+    "en": "Target level on which to stop while executing Baby Dimming. Can be 0 to completely switch off the light.",
+    "nl": "Doel level waarbij gestopt wordt bij het uitvoeren van de baby dim functie. Kan 0 zijn om het licht volledig uit te schakelen.",
+    "de": "Zielebene, auf dem zu stoppen, während Baby-Dimming ausführt wird. Kann 0 sein wobei das Licht vollständig auszuschalted wird."
+  }
+}

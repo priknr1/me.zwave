@@ -1,0 +1,27 @@
+{
+  "id": "baby_dimming_time",
+  "type": "number",
+  "label": {
+    "en": "Baby Dimming time",
+    "nl": "Baby dim tijd",
+    "de": "Baby-Abdimmzeit"
+  },
+  "value": 0,
+  "hint": {
+    "en": "Time to dim on double click Off button for Baby-Dim function. This function works only if the load is operated by single press and hold button action. If enabled, the device will wait for a click timeout to see if the second click would be pressed. This will introduce a small delay for single click commands.",
+    "nl": "Tijd om te dimmen bij een dubbel druk actie op de uit nop voor de baby dim functie. Deze functie werkt enkel indien er met een enkele klik en het tijdelijk vasthouden van de knop ingeschakeld is. Indien ingeschakeld wacht het apparaat voor een klik tijd om te zien of de knop nogmaals gedrukt wordt. Hierdoor ontstaat een tijdelijke vertraging.",
+    "de": "Zeit bei einen Doppelklick auf Aus-Taste für Baby Dim Funktion. Diese Funktion funktioniert nur, wenn die letzte durch einmaliges Drücken in betrieb genomen ist und wen die taste gehalten ist. Wenn diese Option aktiviert wird, wird das Gerät für einen Klick Timeout warten, um zu sehen, ob der zweite Klick gedrückt würde. Dies wird eine kleine Verzögerung für Klick-Befehle einführen."
+  },
+  "attr": {
+    "min": 0,
+    "max": 99
+  },
+  "units": {
+    "en": "min",
+    "nl": "min"
+  },
+  "zwave": {
+    "index": 8,
+    "size": 1
+  }
+}

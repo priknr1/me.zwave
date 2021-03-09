@@ -1,0 +1,27 @@
+{
+  "id": "dimming_speed",
+  "type": "number",
+  "label": {
+      "en": "Dimming speed",
+      "nl": "Dim snelheid",
+      "de": "Dimmgeschwindigkeit"
+  },
+  "value": 30,
+  "hint": {
+      "en": "Time to dim on button presses and Set command (if it has no duration specified). If not 0, dimming will be done smoothly to preserv bulb life.",
+      "nl": "Tijd om te dimmen bij het drukken van de knop. Indien 0 (en geen instelling ingesteld, zal het dimmen soepel uitgevoerd worden om de levensduur van de lamp te behouden.",
+      "de": "Zeit beim Drücken der Taste zu dimmen. Wenn 0 (kein wert eingesteld), verdunkelt es glatt, um die Lebensdauer der Lampe zu erhalten."
+  },
+  "attr": {
+    "min": 0,
+    "max": 255
+  },
+  "units": {
+    "en": "x10 ms",
+    "nl": "x10 ms"
+  },
+  "zwave": {
+    "index": 5,
+    "size": 1
+  }
+}

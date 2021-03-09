@@ -1,0 +1,45 @@
+{
+  "id": "max_light_level_on_click",
+  "type": "dropdown",
+  "label": {
+    "en": "Set maximum light level on On click",
+    "nl": "Zet maximum licht niveau bij inschakelen",
+    "de": "Setzt die maximale Lichtstärke bei einschalten"
+  },
+  "value": "0",
+  "hint": {
+    "en": "Defines if the dimmer shall set maximum light level on On command. By default on On command dimmer restores last level.",
+    "nl": "Definieerd of de dimmer de maximum licht sterkte bij inschakelen moet gebruiken. Standaard wordt bij On actie het laatste niveau hersteld.",
+    "de": "Legt fest, ob der Dimmer maximale Lichtstärke auf On-Befehl gesetzt wird. In der Standardeinstellung wird die letzte einstellung Wiederhergesteld."
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "No",
+        "nl": "Nee",
+        "de": "Nein"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "If already On",
+        "nl": "Indien reeds ingeschakeld",
+        "de": "Wenn bereits eingeschalted"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Always",
+        "nl": "Altijd",
+        "de": "Immer"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 7,
+    "size": 1
+  }
+}

@@ -11,5 +11,9 @@
     "en": "This parameter ({{zwaveParameterIndex}}) determines whether the dim start value should be ignored or respected, when ignored the device will not start dimming from the currently set dim value.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het dim start niveau moet worden genegeerd of gerespecteerd, bij negeren zal het apparaat niet beginnen met dimmen vanaf het op dat moment ingestelde dim niveau.",
     "de": "Legt fest, ob der Dimmer den StartLevelChange einstellung ignorieren soll unabhängig davon ob er eingesteld ist oder nicht."
+  },
+  "zwave": {
+    "index": 4,
+    "size": 1
   }
 }
