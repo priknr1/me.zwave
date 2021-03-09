@@ -3,7 +3,8 @@
   "type": "dropdown",
   "label": {
     "en": "Switch All command behavior.",
-    "nl": "Switch All commando gedrag."
+    "nl": "Switch All commando gedrag.",
+    "de": "Senden den folgenden Switch All Befehle"
   },
   "value": "1",
   "hint": {

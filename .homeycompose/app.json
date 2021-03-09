@@ -9,7 +9,8 @@
   "compatibility": ">=5.0.0",
   "description": {
     "en": "Z-Wave.Me devices for Homey",
-    "nl": "Z-Wave.Me apparaten voor Homey"
+    "nl": "Z-Wave.Me apparaten voor Homey",
+    "de": "Z-Wave.Me Geräte für Homey"
   },
   "category": [
     "appliances",

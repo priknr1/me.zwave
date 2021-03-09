@@ -8,8 +8,8 @@
   },
   "value": "1",
   "hint": {
-    "en": "Defines which command should be sent on button single press or hold. Basic commands are sent to Association group. Switch All commands are sent broadcast.",
-    "nl": "Definieerd welke opdrachten verzonden moeten worden bij enkel drukken en houden. Basis commando's worden verzonden aan Association group. Switch All commandos worden hierbij verzonden.",
+    "en": "This parameter ({{zwaveParameterIndex}}) defines which command should be sent on button single press or hold. Basic commands are sent to Association group. Switch All commands are sent broadcast.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald welke opdrachten verzonden moeten worden bij enkel drukken en houden. Basis commando's worden verzonden aan Association group. Switch All commandos worden hierbij verzonden.",
     "de": "Legt fest, welche befehlen auf die Schaltfläche Einzel drücken oder halten gesendet werden. Basic-Befehle werden zu den Assoziationsgruppe gesendet. Switch All Befehle werden gesendet."
   },
   "values": [
