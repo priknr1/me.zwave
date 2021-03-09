@@ -1,5 +1,5 @@
 {
-  "id": "start_level",
+  "id": "restore_state",
   "type": "checkbox",
   "label": {
     "en": "Restore state after power failure",
