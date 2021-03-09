@@ -1,0 +1,47 @@
+[
+  {
+    "$extends": "ledModes"
+  },
+  {
+    "$extends": "autoOff"
+  },
+  {
+    "$extends": "commandRfOff"
+  },
+  {
+    "$extends": "ignoreStartLevel"
+  },
+  {
+    "$extends": "dimSpeed"
+  },
+  {
+    "$extends": "dimSpeedLong"
+  },
+  {
+    "$extends": "maxDimOnCommand"
+  },
+  {
+    "$extends": "dimTime"
+  },
+  {
+    "$extends": "dimTargetLevel"
+  },
+  {
+    "$extends": "clickTimeout"
+  },
+  {
+    "$extends": "invertButtons"
+  },
+  {
+    "$extends": "buttonConfig"
+  },
+  {
+    "$extends": "singleClickAction"
+  },
+  {
+    "$extends": "doubleClickAction"
+  },
+  {
+    "$extends": "switchAllCommand"
+  }
+]
