@@ -9,18 +9,10 @@
     "$extends": "commandRfOff"
   },
   {
-    "$extends": "ignoreStartLevel",
-    "zwave": {
-      "index": 4,
-      "size": 1
-    }
+    "$extends": "ignoreStartLevel"
   },
   {
-    "$extends": "restoreState",
-    "zwave": {
-      "index": 5,
-      "size": 1
-    }
+    "$extends": "restoreState"
   },
   {
     "$extends": "clickTimeout"

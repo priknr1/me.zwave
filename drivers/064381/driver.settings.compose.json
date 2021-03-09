@@ -9,11 +9,7 @@
     "$extends": "commandRfOff"
   },
   {
-    "$extends": "restoreState",
-    "zwave": {
-      "index": 5,
-      "size": 1
-    }
+    "$extends": "restoreState"
   },
   {
     "$extends": "ledColorOff"
