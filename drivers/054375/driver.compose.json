@@ -1,0 +1,33 @@
+{
+  "id": "054375",
+  "name": {
+    "en": "054375 - Schuko plugin Switch",
+    "nl": "054375 - Schuko plugin schakelaar",
+    "de": "054375 - Schuko plugin schalter"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 100,
+    "productTypeId": 12289,
+    "productId": 0,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press button three times",
+        "nl": "Druk driemaal op knop",
+        "de": "Drücken Sie die Taste dreimal"
+      }
+    },
+    "associationGroups": [
+      1
+    ]
+  }
+}

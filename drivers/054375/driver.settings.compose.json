@@ -1,0 +1,32 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Poll interval",
+      "nl": "Poll interval"
+    },
+    "children": [
+      {
+        "id": "poll_interval",
+        "type": "number",
+        "attr": {
+          "min": 0,
+          "max": 86400
+        },
+        "units": {
+          "en": "s",
+          "nl": "s"
+        },
+        "value": 10,
+        "label": {
+          "en": "On/off",
+          "nl": "On/off"
+        },
+        "hint": {
+          "en": "The amount of seconds between asking the device for a status update, 0 will disable polling.\nRange: 0 - 86400.\nDefault: 10 seconds.",
+          "nl": "Aantal seconden tussen het opvragen van een status update aan het apparaat, 0 zal polling uitschakelen.\nBereik: 0 - 86400.\nStandaard waarde: 10 seconden."
+        }
+      }
+    ]
+  }
+]
