@@ -46,7 +46,8 @@
         "id": "auto_off_2",
         "zwave": {
           "index": 22,
-          "size": 2
+          "size": 2,
+          "signed": false
         }
       },
       {
