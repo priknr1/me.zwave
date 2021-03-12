@@ -1,0 +1,17 @@
+{
+  "id": "node_id_of_the_blocking_device",
+  "type": "number",
+  "label": {
+    "en": "Node Id of the blocking device",
+    "nl": "Node ID bewegingsbeveiliging"
+  },
+  "hint": {
+    "en": "Id of the device which commands would be interpreted not as Open/Close, but as block/unblock. Usefull with door opening detector: if the door is open, block the blind not to break shades while they move.",
+    "nl": "Node Id van een apparaat waarvan de status de beweging kan blokeren. Bijvoorbeeld in combinatie met een deur sensor, wanneer de deur open is mogen de jaloezien niet bewegen om schade te voorkomen."
+  },
+  "value": 0,
+  "zwave": {
+    "index": 6,
+    "size": 1
+  }
+}

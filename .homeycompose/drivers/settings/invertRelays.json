@@ -1,0 +1,17 @@
+{
+  "id": "invert_open_and_close_relays",
+  "type": "checkbox",
+  "label": {
+    "en": "Invert open and close relays",
+    "nl": "Inverteer open/sluiten relais"
+  },
+  "value": false,
+  "hint": {
+    "en": "Allow exchanging open and close relays if blind control is wired to the motor incorrectly.",
+    "nl": "Inverteer het gedrag van de open/sluiten relais om een verkeerd aangesloten motor werkend te krijgen."
+  },
+  "zwave": {
+    "index": 9,
+    "size": 1
+  }
+}

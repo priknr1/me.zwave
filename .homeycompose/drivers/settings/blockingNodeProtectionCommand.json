@@ -1,0 +1,31 @@
+{
+  "id": "on_which_command_from_blocking_node_to_enable_the_protection",
+  "type": "dropdown",
+  "label": {
+    "en": "Blocking node protection command",
+    "nl": "Blokerend beveiligings commando"
+  },
+  "hint": {
+    "en": "This parameter ({{zwaveParameterIndex}}) defines which command from the blocking device to interpret as closed door and hence, unprotected.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald welk commando van het 'beveiligingsapparaat' moet worden geinterpreteerd als 'gesloten' en dus veilig om te bewegen."
+  },
+  "value": "0",
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "(0) On"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "(1) Off"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 7,
+    "size": 1
+  }
+}
