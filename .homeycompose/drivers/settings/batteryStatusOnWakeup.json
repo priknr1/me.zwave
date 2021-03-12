@@ -1,0 +1,35 @@
+{
+  "type": "dropdown",
+  "label": {
+    "en": "Send unsolicited Battery Report on Wake Up.",
+    "nl": "Stuur Batterij update tijdens Wake Up."
+  },
+  "hint": {
+    "en": "If the {{driverNameEn}} wakes up and there is no controller nearby, several unsuccessful communication attempts will drain battery.",
+    "nl": "Als de {{driverNameEn}} wakker word en er geen controller dichtbij is, zal de batterij snel leeg lopen bij veelvuldig onsucesvolle communicatie."
+  },
+  "value": "1",
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "(0) No.",
+        "nl": "(0) nee."
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "(1) To same node as wake up notification. (Default)",
+        "nl": "(1) Naar de zelfde node als de wake up notificatie. (Default)"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "(2) Broadcast to neighbours.",
+        "nl": "(2) Verstuur naar buren."
+      }
+    }
+  ]
+}

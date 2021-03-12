@@ -1,0 +1,95 @@
+{
+    "id": "scene-switch",
+    "title": {
+        "en": "Scene activation",
+        "nl": "Scene activatie"
+    },
+    "hint": {
+        "en": "In order to use this functionality, make sure the command control is configured for central scene gateway functionality in the device settings.",
+        "nl": "Zorg er voor dat commando contole in gesteld staat op centrale gateway scene via de apparaat instellingen, om gebruik te maken van deze functionaliteit."
+    },
+    "args": [
+        {
+            "name": "device",
+            "type": "device",
+            "filter": {
+                "driver_id": "POPP_WALLC|WALLC-S|WALLC-S_V2|ZME_KFOB"
+            }
+        },
+        {
+            "name": "button",
+            "type": "dropdown",
+            "values": [
+                {
+                    "id": "1",
+                    "label": {
+                        "en": "Button 1",
+                        "nl": "Knop 1"
+                    }
+                },
+                {
+                    "id": "2",
+                    "label": {
+                        "en": "Button 2",
+                        "nl": "Knop 2"
+                    }
+                },
+                {
+                    "id": "3",
+                    "label": {
+                        "en": "Button 3",
+                        "nl": "Knop 3"
+                    }
+                },
+                {
+                    "id": "4",
+                    "label": {
+                        "en": "Button 4",
+                        "nl": "Knop 4"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "scene",
+            "type": "dropdown",
+            "values": [
+                {
+                    "id": "Key Pressed 1 time",
+                    "label": {
+                        "en": "Pressed 1x",
+                        "nl": "1x ingedrukt"
+                    }
+                },
+                {
+                    "id": "Key Pressed 2 times",
+                    "label": {
+                        "en": "Pressed/switched 2x",
+                        "nl": "2x Ingedrukt/geschakeld"
+                    }
+                },
+                {
+                    "id": "Key Pressed 3 times",
+                    "label": {
+                        "en": "Pressed/switched 3x",
+                        "nl": "3x Ingedrukt/geschakeld"
+                    }
+                },
+                {
+                    "id": "Key Held Down",
+                    "label": {
+                        "en": "Long press",
+                        "nl": "Lang drukken"
+                    }
+                },
+                {
+                    "id": "Key Released",
+                    "label": {
+                        "en": "Long press released",
+                        "nl": "Lang drukken gestopt"
+                    }
+                }
+            ]
+        }
+    ]
+}

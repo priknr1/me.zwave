@@ -1,0 +1,36 @@
+{
+  "id": "054336Z",
+  "name": {
+    "en": "054336Z - Z-Wave.Me dimmer",
+    "nl": "054336Z - Z-Wave.Me dimmer",
+    "de": "054336Z - Z-Wave.Me dimmer"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 277,
+    "productTypeId": 4096,
+    "productId": 2,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the on or off button of the dimmer three times",
+        "nl": "Druk driemaal op de aan of uit knop op de dimmer",
+        "de": "Drücken Sie die Ein- oder Aus-Taste der Dimmer dreimal"
+      }
+    },
+    "associationGroups": [
+      1,
+      2,
+      3
+    ]
+  }
+}

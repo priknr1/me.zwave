@@ -1,0 +1,38 @@
+[
+  {
+    "$extends": "ledModes"
+  },
+  {
+    "$extends": "autoOff"
+  },
+  {
+    "$extends": "commandRfOff"
+  },
+  {
+    "$extends": "ignoreStartLevel"
+  },
+  {
+    "$extends": "restoreState"
+  },
+  {
+    "$extends": "clickTimeout"
+  },
+  {
+    "$extends": "invertButtons"
+  },
+  {
+    "$extends": "buttonConfig"
+  },
+  {
+    "$extends": "singleClickAction"
+  },
+  {
+    "$extends": "doubleClickAction"
+  },
+  {
+    "$extends": "switchAllCommand"
+  },
+  {
+    "$extends": "buttonDownPress"
+  }
+]

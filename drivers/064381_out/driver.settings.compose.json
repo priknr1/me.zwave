@@ -1,0 +1,20 @@
+[
+  {
+    "$extends": "ledModes"
+  },
+  {
+    "$extends": "autoOff"
+  },
+  {
+    "$extends": "commandRfOff"
+  },
+  {
+    "$extends": "restoreState"
+  },
+  {
+    "$extends": "ledColorOff"
+  },
+  {
+    "$extends": "ledColorOn"
+  }
+]

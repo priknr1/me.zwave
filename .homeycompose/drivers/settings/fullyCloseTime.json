@@ -1,0 +1,26 @@
+{
+  "id": "full_close_time",
+  "type": "number",
+  "label": {
+    "en": "Full close time",
+    "nl": "Volledig sluiten tijd"
+  },
+  "hint": {
+    "en": "Time to go from opened to closed state. Used to estimate the current level. Note that in Permanent motion mode the reported value would a be Closed or Opened, while all Basic and Multilevel Set values (1-99, 255) would Open except 0 value that would Close.",
+    "nl": "De tijd die nodig is om van volledig open naar volledig gesloten te gaan. Word gebruikt om in te schatten hoe ver het is. Let op dat in permanente bewegings modes het device alleen open of gesloten raporteerd, terwijl de Basic en Multilevel Set waardes (1-99, 255) waarbij 0 gesloten is."
+  },
+  "value": 60,
+  "attr": {
+    "min": 0,
+    "max": 255
+  },
+  "units": {
+    "en": "s",
+    "nl": "s"
+  },
+  "zwave": {
+    "index": 4,
+    "size": 1,
+    "signed": false
+  }
+}

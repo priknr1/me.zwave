@@ -1,0 +1,45 @@
+{
+  "id": "switch_by_buttons",
+  "type": "dropdown",
+  "label": {
+    "en": "Switch by buttons",
+    "nl": "Wissel met knop",
+    "de": "Wechseln mit der Tasten"
+  },
+  "value": "1",
+  "hint": {
+    "en": "If disabled, the local operations by buttons will not switch the load, but only send commands to On/Off association group. In this mode buttons are not linked with the switch anymore. They can be used separately: buttons to control remote device, switch will operate by RF commands only.",
+    "nl": "Indien uigeschakeld, wordt de lokale operatie van de knoppen niet meer gebruikt voor het aansturen van de aangesloten apparaten, maar wordt enkel een Aan/Uit gestuurd aan de verbonden Association-groups. In deze modus zijn de knoppen niet meer gekoppeld aan de schakelaar. Deze kunnen seperaat gebruikt worden: knoppen voor het schakelen van een ander apparaat, schakelaar wordt aangestuurd via RF commandos.",
+    "de": "Wenn deaktiviert, schalten die lokalen Operationen durch Tasten nicht die Last, sondern nur Befehle Ein- / Aus-schalten an die Association-Gruppe. In diesem Modus sind die Tasten nicht meht mit dem Schalter verbunden. Sie können separat verwendet werden: Tasten zum steuern von andere geräte, Schalter wird durch RF Befehlt."
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "No",
+        "nl": "Nee",
+        "de": "Nein"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "By single press and hold",
+        "nl": "Bij enkel drukken en houden",
+        "de": "Durch einfaches Drücken und halten"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "By double press and press-hold",
+        "nl": "Bij dubbel drukken en houden",
+        "de": "Durch doppeltes Drücken und halten"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 12,
+    "size": 1
+  }
+}

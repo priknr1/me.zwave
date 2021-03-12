@@ -1,0 +1,35 @@
+{
+  "id": "ZME_05468",
+  "name": {
+    "en": "ZME_05468 - Dimmer Busch-Jaeger duro 2000 (Artic White)",
+    "nl": "ZME_05468 - Dimmer Busch-Jaeger duro 2000 (Artic White)",
+    "de": "ZME_05468 - Dimmer Busch-Jaeger duro 2000 (Artic White)"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 100,
+    "productTypeId": 4096,
+    "productId": 9,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press the on or off button of the dimmer three times",
+        "nl": "Druk driemaal op de aan of uit knop op de dimmer",
+        "de": "Drücken Sie die Ein- oder Aus-Taste der Dimmer dreimal"
+      }
+    },
+    "associationGroups": [
+      1,
+      3
+    ]
+  }
+}

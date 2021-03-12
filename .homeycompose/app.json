@@ -1,0 +1,39 @@
+{
+  "id": "me.zwave",
+  "name": {
+    "en": "Z-Wave.Me"
+  },
+  "brandColor": "#000000",
+  "sdk": 3,
+  "version": "0.3.0",
+  "compatibility": ">=5.0.0",
+  "description": {
+    "en": "Z-Wave.Me devices for Homey",
+    "nl": "Z-Wave.Me apparaten voor Homey",
+    "de": "Z-Wave.Me Geräte für Homey"
+  },
+  "category": [
+    "appliances",
+    "lights"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Patrick van der Westen",
+    "email": "pvdwesten@hotmail.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Patrick",
+        "email": "pvdwesten@hotmail.com"
+      },
+      {
+        "name": "Spikey",
+        "email": "spikey.f@gmail.com"
+      }
+    ]
+  }
+}

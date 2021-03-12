@@ -1,0 +1,35 @@
+{
+  "id": "054367Z",
+  "name": {
+    "en": "054367Z - Düwi Blind Control v1.3",
+    "nl": "054367Z - Düwi Rolluik Control v1.3"
+  },
+  "class": "windowcoverings",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "icon": "{{driverAssetsPath}}/icon.svg",
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 277,
+    "productTypeId": 4096,
+    "productId": 3,
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
+      "instruction": {
+        "en": "Press button three times",
+        "nl": "Druk driemaal op knop",
+        "de": "Drücken Sie die Taste dreimal"
+      }
+    },
+    "associationGroups": [
+      1,
+      2,
+      3
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "restrore_state_2_switch",
+  "type": "dropdown",
+  "label": {
+    "en": "Restore state after power failure",
+    "nl": "Herstel status na stroomonderbreking"
+  },
+  "hint": {
+    "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+  },
+  "value": "3",
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "No, Trun off both channels",
+        "nl": "Nee, uit beide kanalen uit laten"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Restore channel 1, leave channel 2 off",
+        "nl": "Herstel kanaal 1, laat kanaal 2 uit"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Restore channel 2, leave channel 1 off",
+        "nl": "Herstel kanaal 2, laat kanaal 1 uit"
+      }
+    },
+    {
+      "id": "3",
+      "label": {
+        "en": "Restore both channels",
+        "nl": "Herstel beide kanalen"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 5,
+    "size": 1
+  }
+}

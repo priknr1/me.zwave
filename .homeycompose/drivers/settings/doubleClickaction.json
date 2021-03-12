@@ -1,0 +1,45 @@
+{
+  "id": "action_on_double_press_or_hold",
+  "type": "dropdown",
+  "label": {
+    "en": "Action on button double press or hold",
+    "nl": "Aktie bij dubbel druk en houden van de knop",
+    "de": "Aktion mit doppel drücken und halten derr Taste"
+  },
+  "value": "0",
+  "hint": {
+    "en": "This parameter ({{zwaveParameterIndex}}) defines which command should be sent on button double press or press-hold. Basic commands are sent to Association group. Switch All commands are sent broadcast. If not disabled, the device will wait for a click timeout to see if the second click would be pressed. This will introduce a small delay for single click commands.",
+    "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaald welke opdrachten verzonden moeten worden bij dubbel drukken en houden. Basis commando's worden verzonden aan Association group. Switch All commandos worden hierbij verzonden. Indien niet uitgeschakeld wacht het apparaat foor een dubbel klick timeout om te controleren dat er geen tweede klick wordt uitgevoerd. Dit introduceert een kleine vertraging.",
+    "de": "Legt fest, welche befehlen auf die Schaltfläche Einzel drücken oder halten gesendet werden. Basic-Befehle werden zu den Assoziationsgruppe gesendet. Switch All Befehle werden gesendet. Wenn nicht ausgeschalted warted das geräht auf einen Doppelklick Timeout zodass es keine zweite mall gedrükt wird. Dies zorgt vur eine kleine Verzögerung."
+  },
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Disabled (don't wait for double click)",
+        "nl": "Uitgeschakeld (wacht niet voor dubbel klik)",
+        "de": "Deaktiviert (warten Sie nicht für Doppelklick)"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Switch On, Off and dim using Basic Set",
+        "nl": "Schakel aan, uit en dim met behulp van Basic Set",
+        "de": "Schalten Ein, Aus und Dimmen mit Basic Set"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Switch All",
+        "nl": "Schakel allen",
+        "de": "Schalte alle"
+      }
+    }
+  ],
+  "zwave": {
+    "index": 14,
+    "size": 1
+  }
+}

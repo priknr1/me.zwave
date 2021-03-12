@@ -1,0 +1,17 @@
+{
+  "id": "invert_buttons",
+  "type": "checkbox",
+  "label": {
+    "en": "Invert buttons",
+    "nl": "Inverteer knoppen"
+  },
+  "value": false,
+  "hint": {
+    "en": "Invert the behaviour of the buttons.",
+    "nl": "Inverteer het gedrag van de knoppen."
+  },
+  "zwave": {
+    "index": 11,
+    "size": 1
+  }
+}

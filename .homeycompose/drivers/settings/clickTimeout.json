@@ -1,0 +1,28 @@
+{
+  "id": "click_timeout",
+  "type": "number",
+  "label": {
+    "en": "Typical click timeout",
+    "nl": "Standaard klik timeout",
+    "de": "Typische Klick Timeout"
+  },
+  "value": 50,
+  "hint": {
+    "en": "Typical time used to differentiate click, hold, double and triple clicks.",
+    "nl": "Standaard tijd gebruikt om een onderscheid te maken tussen klick, houden, dubbel klick en trippel klik.",
+    "de": "Typische Zeit verwendet fur Klick zum unterscheiden von Klick, halten, doppel Klicks und dreifache Klicks."
+  },
+  "attr": {
+    "min": 1,
+    "max": 100
+  },
+  "units": {
+    "en": "x10 ms",
+    "nl": "x10 ms"
+  },
+  "zwave": {
+    "index": 10,
+    "size": 1,
+    "signed": false
+  }
+}

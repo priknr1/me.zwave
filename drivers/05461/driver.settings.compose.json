@@ -1,0 +1,71 @@
+[
+  {
+    "$extends": "ledModes"
+  },
+  {
+    "$extends": "restoreState2Switch"
+  },
+  {
+    "$extends": "invertButtons"
+  },
+  {
+    "$extends": "singleClickAction"
+  },
+  {
+    "$extends": "doubleClickAction"
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Channel 1 configuration",
+      "nl": "Configuratie kanaal 1"
+    },
+    "collapsed": false,
+    "children": [
+      {
+        "$extends": "autoOff"
+      },
+      {
+        "$extends": "commandRfOff"
+      },
+      {
+        "$extends": "buttonConfig"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Channel 2 configuration",
+      "nl": "Configuratie kanaal 2"
+    },
+    "collapsed": false,
+    "children": [
+      {
+        "$extends": "autoOff",
+        "id": "auto_off_2",
+        "zwave": {
+          "index": 22,
+          "size": 2,
+          "signed": false
+        }
+      },
+      {
+        "$extends": "commandRfOff",
+        "id": "rf_off_command_2",
+        "zwave": {
+          "index": 23,
+          "size": 1
+        }
+      },
+      {
+        "$extends": "buttonConfig",
+        "id": "switch_by_buttons_2",
+        "zwave": {
+          "index": 32,
+          "size": 1
+        }
+      }
+    ]
+  }
+]
