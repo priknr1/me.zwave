@@ -1,0 +1,44 @@
+[
+  {
+    "$extends": "ledModes"
+  },
+  {
+    "$extends": "autoClose"
+  },
+  {
+    "$extends": "commandRfOff"
+  },
+  {
+    "$extends": "fullyCloseTime"
+  },
+  {
+    "$extends": "fullyOpenTime"
+  },
+  {
+    "$extends": "blockingNodeId"
+  },
+  {
+    "$extends": "blockingNodeProtectionCommand"
+  },
+  {
+    "$extends": "oppositeButtonBehaviour"
+  },
+  {
+    "$extends": "invertRelays"
+  },
+  {
+    "$extends": "clickTimeout"
+  },
+  {
+    "$extends": "invertButtons"
+  },
+  {
+    "$extends": "buttonConfig"
+  },
+  {
+    "$extends": "singleClickAction"
+  },
+  {
+    "$extends": "switchAllCommand"
+  }
+]
