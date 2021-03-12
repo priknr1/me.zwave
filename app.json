@@ -1722,8 +1722,8 @@
     {
       "id": "054367Z",
       "name": {
-        "en": "064367 - Düwi Blind Control v1.3",
-        "nl": "064367 - Düwi Rolluik Control v1.3"
+        "en": "054367Z - Düwi Blind Control v1.3",
+        "nl": "054367Z - Düwi Rolluik Control v1.3"
       },
       "class": "windowcoverings",
       "capabilities": [
@@ -1736,9 +1736,9 @@
         "small": "/drivers/054367Z/assets/images/small.png"
       },
       "zwave": {
-        "manufacturerId": 100,
-        "productTypeId": 16385,
-        "productId": 0,
+        "manufacturerId": 277,
+        "productTypeId": 4096,
+        "productId": 3,
         "learnmode": {
           "image": "/drivers/054367Z/assets/learnmode.svg",
           "instruction": {
