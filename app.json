@@ -9,9 +9,9 @@
   "version": "0.4.1",
   "compatibility": ">=5.0.0",
   "description": {
-    "en": "Z-Wave.Me and Düwi devices for Homey",
-    "nl": "Z-Wave.Me en Düwi apparaten voor Homey",
-    "de": "Z-Wave.Me und Düwi Geräte für Homey"
+    "en": "Z-Wave.Me devices for Homey",
+    "nl": "Z-Wave.Me apparaten voor Homey",
+    "de": "Z-Wave.Me Geräte für Homey"
   },
   "category": [
     "appliances",
@@ -2271,6 +2271,291 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "054381_out",
+      "name": {
+        "en": "054381_out - Schuko Outdoor plugin Switch",
+        "nl": "054381_out - Schuko plugin schakelaar buiten",
+        "de": "054381_out - Schuko plugin schalter ausser"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "icon": "/drivers/054381_out/assets/icon.svg",
+      "images": {
+        "large": "/drivers/054381_out/assets/images/large.png",
+        "small": "/drivers/054381_out/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 100,
+        "productTypeId": 4096,
+        "productId": 0,
+        "learnmode": {
+          "image": "/drivers/054381_out/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press button three times",
+            "nl": "Druk driemaal op knop",
+            "de": "Drücken Sie die Taste dreimal"
+          }
+        },
+        "associationGroups": [
+          1,
+          2
+        ]
+      },
+      "settings": [
+        {
+          "id": "led_mode",
+          "type": "dropdown",
+          "label": {
+            "en": "LED Mode",
+            "nl": "LED-modus",
+            "de": "LED-Modus"
+          },
+          "value": "3",
+          "hint": {
+            "en": "Set LED indication mode",
+            "nl": "Zet LED indicatie modus",
+            "de": "LED einstellungen modus setzen"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Disabled",
+                "nl": "Uitgeschakeld",
+                "de": "Ausgeschaltet"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Show switch state",
+                "nl": "Gebruik schakelaar stand",
+                "de": "Benutze Shalterstand"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Night mode (inverted switch state)",
+                "nl": "Nacht modus (wissel schakelaar stand)",
+                "de": "Nachtbetrieb (wechsel-Schaltzustand)"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Operated by Indicator Command Class",
+                "nl": "Uitgevoerd door Indicator Command klasse",
+                "de": "Durchgeführt von Indicator Befehlsklasse"
+              }
+            }
+          ],
+          "zwave": {
+            "index": 1,
+            "size": 1
+          }
+        },
+        {
+          "id": "auto_off",
+          "type": "number",
+          "label": {
+            "en": "Automatically switch off",
+            "nl": "Schakel automatisch uit"
+          },
+          "value": 0,
+          "attr": {
+            "min": 0,
+            "max": 65535
+          },
+          "units": {
+            "en": "s",
+            "nl": "s"
+          },
+          "hint": {
+            "en": "This parameter (2) defines the time after which the device is off/close blind automatically. Note: setting this parameter to 0 will disable automatically turning off.",
+            "nl": "Deze parameter (2) bepaalt de tijd waarna het apparaat zichzelf automatisch uitzet/jaloezien sluit. Let op: het instellen van deze parameter op 0 schakelt het automatisch uit gaan uit."
+          },
+          "zwave": {
+            "index": 2,
+            "size": 2,
+            "signed": false
+          }
+        },
+        {
+          "id": "rf_off_command",
+          "type": "dropdown",
+          "label": {
+            "en": "What to do on RF off command",
+            "nl": "Wat te doen op RF-uit commando",
+            "de": "Was auf RF aus-Befehl zu tun"
+          },
+          "value": "0",
+          "hint": {
+            "en": "Defines how to interpret RF Off command.",
+            "nl": "Definieert hoe het RF uit commando te interpreteren is.",
+            "de": "Legt fest, wie RF-Aus-Befehl zu interpretieren."
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Switch off",
+                "nl": "Uischakeld",
+                "de": "Ausschalten"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Ignore",
+                "nl": "Negeren",
+                "de": "Ignorieren"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Switch on",
+                "nl": "Inschakelen",
+                "de": "Einschalten"
+              }
+            }
+          ],
+          "zwave": {
+            "index": 3,
+            "size": 1
+          }
+        },
+        {
+          "id": "restore_state",
+          "type": "checkbox",
+          "label": {
+            "en": "Restore state after power failure",
+            "nl": "Herstel status na stroomonderbreking"
+          },
+          "hint": {
+            "en": "This parameter (5) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+            "nl": "Deze parameter (5) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
+          },
+          "value": true,
+          "zwave": {
+            "index": 5,
+            "size": 1
+          }
+        },
+        {
+          "id": "led_off_color",
+          "type": "dropdown",
+          "label": {
+            "en": "Off LED Color",
+            "nl": "Uit LED kleur"
+          },
+          "value": "3",
+          "hint": {
+            "en": "This parameter (22) defines what color the LED should have when the device is switched off.",
+            "nl": "Deze parameter (22) bepaald kleur van de LED wanneer het apparaat uitgeschakeld is."
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Red",
+                "nl": "Rood"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Green",
+                "nl": "Groen"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Blue",
+                "nl": "Blauw"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Yellow",
+                "nl": "Geel"
+              }
+            }
+          ],
+          "zwave": {
+            "index": 22,
+            "size": 1
+          }
+        },
+        {
+          "id": "led_on_color",
+          "type": "dropdown",
+          "label": {
+            "en": "On LED Color",
+            "nl": "Aan LED kleur"
+          },
+          "value": "0",
+          "hint": {
+            "en": "This parameter (22) defines what color the LED should have when the device is switched on.",
+            "nl": "Deze parameter (22) bepaald kleur van de LED wanneer het apparaat ingeschakeld is."
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Red",
+                "nl": "Rood"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Green",
+                "nl": "Groen"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Blue",
+                "nl": "Blauw"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Yellow",
+                "nl": "Geel"
+              }
+            }
+          ],
+          "zwave": {
+            "index": 22,
+            "size": 1
+          }
         }
       ]
     },
@@ -4601,291 +4886,6 @@
         "productId": 0,
         "learnmode": {
           "image": "/drivers/064381_out/assets/learnmode.svg",
-          "instruction": {
-            "en": "Press button three times",
-            "nl": "Druk driemaal op knop",
-            "de": "Drücken Sie die Taste dreimal"
-          }
-        },
-        "associationGroups": [
-          1,
-          2
-        ]
-      },
-      "settings": [
-        {
-          "id": "led_mode",
-          "type": "dropdown",
-          "label": {
-            "en": "LED Mode",
-            "nl": "LED-modus",
-            "de": "LED-Modus"
-          },
-          "value": "3",
-          "hint": {
-            "en": "Set LED indication mode",
-            "nl": "Zet LED indicatie modus",
-            "de": "LED einstellungen modus setzen"
-          },
-          "values": [
-            {
-              "id": "0",
-              "label": {
-                "en": "Disabled",
-                "nl": "Uitgeschakeld",
-                "de": "Ausgeschaltet"
-              }
-            },
-            {
-              "id": "1",
-              "label": {
-                "en": "Show switch state",
-                "nl": "Gebruik schakelaar stand",
-                "de": "Benutze Shalterstand"
-              }
-            },
-            {
-              "id": "2",
-              "label": {
-                "en": "Night mode (inverted switch state)",
-                "nl": "Nacht modus (wissel schakelaar stand)",
-                "de": "Nachtbetrieb (wechsel-Schaltzustand)"
-              }
-            },
-            {
-              "id": "3",
-              "label": {
-                "en": "Operated by Indicator Command Class",
-                "nl": "Uitgevoerd door Indicator Command klasse",
-                "de": "Durchgeführt von Indicator Befehlsklasse"
-              }
-            }
-          ],
-          "zwave": {
-            "index": 1,
-            "size": 1
-          }
-        },
-        {
-          "id": "auto_off",
-          "type": "number",
-          "label": {
-            "en": "Automatically switch off",
-            "nl": "Schakel automatisch uit"
-          },
-          "value": 0,
-          "attr": {
-            "min": 0,
-            "max": 65535
-          },
-          "units": {
-            "en": "s",
-            "nl": "s"
-          },
-          "hint": {
-            "en": "This parameter (2) defines the time after which the device is off/close blind automatically. Note: setting this parameter to 0 will disable automatically turning off.",
-            "nl": "Deze parameter (2) bepaalt de tijd waarna het apparaat zichzelf automatisch uitzet/jaloezien sluit. Let op: het instellen van deze parameter op 0 schakelt het automatisch uit gaan uit."
-          },
-          "zwave": {
-            "index": 2,
-            "size": 2,
-            "signed": false
-          }
-        },
-        {
-          "id": "rf_off_command",
-          "type": "dropdown",
-          "label": {
-            "en": "What to do on RF off command",
-            "nl": "Wat te doen op RF-uit commando",
-            "de": "Was auf RF aus-Befehl zu tun"
-          },
-          "value": "0",
-          "hint": {
-            "en": "Defines how to interpret RF Off command.",
-            "nl": "Definieert hoe het RF uit commando te interpreteren is.",
-            "de": "Legt fest, wie RF-Aus-Befehl zu interpretieren."
-          },
-          "values": [
-            {
-              "id": "0",
-              "label": {
-                "en": "Switch off",
-                "nl": "Uischakeld",
-                "de": "Ausschalten"
-              }
-            },
-            {
-              "id": "1",
-              "label": {
-                "en": "Ignore",
-                "nl": "Negeren",
-                "de": "Ignorieren"
-              }
-            },
-            {
-              "id": "2",
-              "label": {
-                "en": "Switch on",
-                "nl": "Inschakelen",
-                "de": "Einschalten"
-              }
-            }
-          ],
-          "zwave": {
-            "index": 3,
-            "size": 1
-          }
-        },
-        {
-          "id": "restore_state",
-          "type": "checkbox",
-          "label": {
-            "en": "Restore state after power failure",
-            "nl": "Herstel status na stroomonderbreking"
-          },
-          "hint": {
-            "en": "This parameter (5) determines whether after a power failure the device should be restored to the state it had before the power failure.",
-            "nl": "Deze parameter (5) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
-          },
-          "value": true,
-          "zwave": {
-            "index": 5,
-            "size": 1
-          }
-        },
-        {
-          "id": "led_off_color",
-          "type": "dropdown",
-          "label": {
-            "en": "Off LED Color",
-            "nl": "Uit LED kleur"
-          },
-          "value": "3",
-          "hint": {
-            "en": "This parameter (22) defines what color the LED should have when the device is switched off.",
-            "nl": "Deze parameter (22) bepaald kleur van de LED wanneer het apparaat uitgeschakeld is."
-          },
-          "values": [
-            {
-              "id": "0",
-              "label": {
-                "en": "Off",
-                "nl": "Uit"
-              }
-            },
-            {
-              "id": "1",
-              "label": {
-                "en": "Red",
-                "nl": "Rood"
-              }
-            },
-            {
-              "id": "2",
-              "label": {
-                "en": "Green",
-                "nl": "Groen"
-              }
-            },
-            {
-              "id": "3",
-              "label": {
-                "en": "Blue",
-                "nl": "Blauw"
-              }
-            },
-            {
-              "id": "4",
-              "label": {
-                "en": "Yellow",
-                "nl": "Geel"
-              }
-            }
-          ],
-          "zwave": {
-            "index": 22,
-            "size": 1
-          }
-        },
-        {
-          "id": "led_on_color",
-          "type": "dropdown",
-          "label": {
-            "en": "On LED Color",
-            "nl": "Aan LED kleur"
-          },
-          "value": "0",
-          "hint": {
-            "en": "This parameter (22) defines what color the LED should have when the device is switched on.",
-            "nl": "Deze parameter (22) bepaald kleur van de LED wanneer het apparaat ingeschakeld is."
-          },
-          "values": [
-            {
-              "id": "0",
-              "label": {
-                "en": "Off",
-                "nl": "Uit"
-              }
-            },
-            {
-              "id": "1",
-              "label": {
-                "en": "Red",
-                "nl": "Rood"
-              }
-            },
-            {
-              "id": "2",
-              "label": {
-                "en": "Green",
-                "nl": "Groen"
-              }
-            },
-            {
-              "id": "3",
-              "label": {
-                "en": "Blue",
-                "nl": "Blauw"
-              }
-            },
-            {
-              "id": "4",
-              "label": {
-                "en": "Yellow",
-                "nl": "Geel"
-              }
-            }
-          ],
-          "zwave": {
-            "index": 22,
-            "size": 1
-          }
-        }
-      ]
-    },
-    {
-      "id": "054381_out",
-      "name": {
-        "en": "054381_out - Düwi Schuko Outdoor plugin Switch",
-        "nl": "054381_out - Düwi Schuko plugin schakelaar buiten",
-        "de": "054381_out - Düwi Schuko plugin schalter ausser"
-      },
-      "class": "socket",
-      "capabilities": [
-        "onoff"
-      ],
-      "icon": "/drivers/054381_out/assets/icon.svg",
-      "images": {
-        "large": "/drivers/054381_out/assets/images/large.png",
-        "small": "/drivers/054381_out/assets/images/small.png"
-      },
-      "zwave": {
-        "manufacturerId": 100,
-        "productTypeId": 4096,
-        "productId": 0,
-        "learnmode": {
-          "image": "/drivers/054381_out/assets/learnmode.svg",
           "instruction": {
             "en": "Press button three times",
             "nl": "Druk driemaal op knop",
