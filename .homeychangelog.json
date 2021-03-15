@@ -1,4 +1,7 @@
 {
+  "0.4.2": {
+    "en": "* Only textual and revision history changes"
+  },
   "0.4.1": {
     "en": "* Added Duwi schuko outdoor plugin switch (05438)"
   },
