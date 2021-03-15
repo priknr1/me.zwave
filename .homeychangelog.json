@@ -1,5 +1,8 @@
 {
-  "0.3.0": {
+  "0.4.1": {
+    "en": "* Added Duwi schuko outdoor plugin switch (05438)"
+  },
+  "0.4.0": {
     "en": "* Complete rewrite for SDK3.\nNOTE: The trigger events for the WALLC controllers have been rewritten, unfortunately this will break any trigger/scene based flow in Homey (Sorry!).\nNOTE: Due to the significant changes some devices might need to be reincluded to work properly again."
   },
   "0.1.6": {
