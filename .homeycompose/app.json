@@ -5,7 +5,7 @@
   },
   "brandColor": "#000000",
   "sdk": 3,
-  "version": "0.4.1",
+  "version": "0.4.2",
   "compatibility": ">=5.0.0",
   "description": {
     "en": "Z-Wave.Me devices for Homey",
