@@ -6,7 +6,7 @@
   },
   "brandColor": "#000000",
   "sdk": 3,
-  "version": "0.4.2",
+  "version": "0.4.3",
   "compatibility": ">=5.0.0",
   "description": {
     "en": "Z-Wave.Me devices for Homey",
@@ -37,6 +37,18 @@
       }
     ]
   },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "spikey84"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/priknr1/me.zwave/issues"
+  },
+  "homeyCommunityTopicId": 51909,
+  "source": "https://github.com/priknr1/me.zwave",
   "flow": {
     "triggers": [
       {
@@ -7970,6 +7982,7 @@
           256
         ],
         "productId": [
+          1,
           259
         ],
         "wakeUpInterval": 1800,
